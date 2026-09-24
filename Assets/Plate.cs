@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Plate : Interactable
@@ -6,6 +7,8 @@ public class Plate : Interactable
     [SerializeField] private TypewriterText textUI;
     [TextArea]
     [SerializeField] private string mensagem;
+
+    public event Action<bool> OnPanelChanged;
 
     private void Start()
     {
@@ -27,16 +30,20 @@ public class Plate : Interactable
         if (painel.activeSelf)
         {
             painel.SetActive(false);
+            OnPanelChanged?.Invoke(false);
             return;
         }
 
         painel.SetActive(true);
         textUI.Show(mensagem);
+        OnPanelChanged?.Invoke(true);
     }
 
     public override void OnLoseFocus()
     {
         if (painel != null)
             painel.SetActive(false);
+
+        OnPanelChanged?.Invoke(false);
     }
 }
