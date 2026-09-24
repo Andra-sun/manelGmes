@@ -1,19 +1,16 @@
-using TMPro;
 using UnityEngine;
 
 public class Plate : Interactable
 {
     [SerializeField] private GameObject painel;
-    [SerializeField] private TMP_Text textUI;
+    [SerializeField] private TypewriterText textUI;
     [TextArea]
     [SerializeField] private string mensagem;
 
     private void Start()
     {
         if (painel != null)
-        {
             painel.SetActive(false);
-        }
     }
 
     public override void Interact()
@@ -21,17 +18,25 @@ public class Plate : Interactable
         if (painel == null || textUI == null)
             return;
 
-        bool open = !painel.activeSelf;
-        painel.SetActive(open);
-
-        if (open)
+        if (textUI.IsTyping)
         {
-            textUI.text = mensagem;
+            textUI.Skip();
+            return;
         }
+
+        if (painel.activeSelf)
+        {
+            painel.SetActive(false);
+            return;
+        }
+
+        painel.SetActive(true);
+        textUI.Show(mensagem);
     }
 
     public override void OnLoseFocus()
     {
-        if (painel != null) painel.SetActive(false);
+        if (painel != null)
+            painel.SetActive(false);
     }
 }
