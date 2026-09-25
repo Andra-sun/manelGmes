@@ -13784,6 +13784,7 @@ GameObject:
   - component: {fileID: 510573327}
   - component: {fileID: 510573332}
   - component: {fileID: 510573331}
+  - component: {fileID: 510573333}
   - component: {fileID: 510573330}
   - component: {fileID: 510573329}
   m_Layer: 0
@@ -14086,7 +14087,7 @@ MonoBehaviour:
   objectType: 2
   painel: {fileID: 877499644}
   textUI: {fileID: 319001163}
-  mensagem: "Ol\xE1 meus amigos"
+  mensagem: "Ol\xE1 meu povo!"
   somInteracao: {fileID: 8300000, guid: dcfbd01ea1e2f5445bca055e5ecee62e, type: 3}
   volume: 1
 --- !u!82 &510573332
@@ -14186,6 +14187,77 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!66 &510573333
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510573325}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 1
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 510573330}
+    m_ColliderPaths:
+    - - X: 150000000
+        Y: 101250000
+      - X: 120000000
+        Y: 101250000
+      - X: 120000000
+        Y: 88750000
+      - X: 150000000
+        Y: 88750000
+    - - X: 180000000
+        Y: 91250000
+      - X: 160000000
+        Y: 91250000
+      - X: 160000000
+        Y: 78750000
+      - X: 180000000
+        Y: 78750000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 14.999971, y: 8.875}
+      - {x: 14.999971, y: 10.125}
+      - {x: 12, y: 10.12497}
+      - {x: 12.00003, y: 8.875}
+    - - {x: 17.999971, y: 7.875}
+      - {x: 17.999971, y: 9.125}
+      - {x: 16, y: 9.12497}
+      - {x: 16.000029, y: 7.875}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 510573325}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -14286,10 +14358,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.054428503
-    y: 0.06365952
-    width: 0.8906482
-    height: 0.8730448
+    x: 0.09896091
+    y: 0.14550747
+    width: 0.5937655
+    height: 0.5820299
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -19716,9 +19788,9 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_CompositeOperation: 1
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 3.5, y: -0.9}
   m_SpriteTilingProperty:
@@ -19762,9 +19834,9 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_CompositeOperation: 1
+  m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
