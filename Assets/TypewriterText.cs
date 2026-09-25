@@ -34,10 +34,34 @@ public class TypewriterText : MonoBehaviour
         Stop();
         Tmp.text = text;
 
-        if (ShouldType())
-            routine = StartCoroutine(TypeRoutine());
-        else
+        if (!ShouldType())
+        {
             Tmp.maxVisibleCharacters = int.MaxValue;
+            return;
+        }
+
+        float speed = speedOverride > 0f ? speedOverride : TypewriterConfig.Instance.charPerSecond;
+        float delay = 1f / Mathf.Max(1f, speed);
+
+        routine = StartCoroutine(TypeRoutine(delay));
+    }
+
+    public void ShowSynced(string text, float duracaoAudio)
+    {
+        Stop();
+        Tmp.text = text;
+
+        if (!ShouldType() || duracaoAudio <= 0f)
+        {
+            Tmp.maxVisibleCharacters = int.MaxValue;
+            return;
+        }
+
+        Tmp.ForceMeshUpdate();
+        int total = Mathf.Max(1, Tmp.textInfo.characterCount);
+        float delay = duracaoAudio / total;
+
+        routine = StartCoroutine(TypeRoutine(delay));
     }
 
     public void Skip()
@@ -55,15 +79,13 @@ public class TypewriterText : MonoBehaviour
         }
     }
 
-    private IEnumerator TypeRoutine()
+    private IEnumerator TypeRoutine(float delay)
     {
         IsTyping = true;
         Tmp.maxVisibleCharacters = 0;
         Tmp.ForceMeshUpdate();
 
         int total = Tmp.textInfo.characterCount;
-        float speed = speedOverride > 0f ? speedOverride : TypewriterConfig.Instance.charPerSecond;
-        float delay = 1f / Mathf.Max(1f, speed);
 
         for (int i = 1; i <= total; i++)
         {
