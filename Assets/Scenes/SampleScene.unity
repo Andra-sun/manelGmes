@@ -13474,7 +13474,7 @@ MonoBehaviour:
   objectType: 2
   painel: {fileID: 877499644}
   textUI: {fileID: 319001163}
-  mensagem: Dromedalio Egipicio
+  mensagem: "Estou aqui perto dum\r\nDROMEDARIO!\r\nOlhe ali\r\nparece com... com a zebra\r\nmas n\xE3o \xE9 n\xE3o, \xE9 dromed\xE1rio.\r\nCantar uma musica pra ele\r\nDROMEDARIO!! :)\r\nOlha se voce n\xE3o me ama, ent\xE3o n\xE3o me liga n\xE3o fica me fazendo queixa\r\nn\xE3o fa\xE7a como as outras ja tem feito.\r\nminha vida \xE9 sofrendo\r\nPor causa de uma mulher bandida ja teve noooite deu querer beber veneno\r\noferecido.. pra ele\r\nessa musica. Dromedario.\r\nNunca tinha visto, \xE9 a primeira veizi.. Nunca vi"
   somInteracao: {fileID: 8300000, guid: 15da5c3526a0b534ab1072b0001b131c, type: 3}
   volume: 1
 --- !u!50 &397834613
@@ -14358,10 +14358,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.09896091
-    y: 0.14550747
-    width: 0.5937655
-    height: 0.5820299
+    x: 0.07845433
+    y: 0.048780486
+    width: 0.8430913
+    height: 0.9005629
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 34
@@ -14391,7 +14391,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.24, y: 7.36, z: -10}
+  m_LocalPosition: {x: 0.36, y: -0.77, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16165,7 +16165,7 @@ MonoBehaviour:
   objectType: 2
   painel: {fileID: 877499644}
   textUI: {fileID: 319001163}
-  mensagem: Outro animal
+  mensagem: "Aquele ali ficou com ci\xFAmes\r\nporque eu acantei a musica\r\nso pra\r\nso pro outro\r\nn\xE3o cantei pra ele\r\nagora vou cantar musica pra ele\r\neu quis dar pra voce\r\nla ele\r\ntodo o meu amor mas ela so me quis como amante\r\ne ainda ????\r\nesse pobi rapaz se garante\r\nla nele mil vezes \r\nla ele\r\nla nele mil vezes"
   somInteracao: {fileID: 8300000, guid: e35f1b38a6cf6ae42a3854e922e92081, type: 3}
   volume: 1
 --- !u!50 &796682325
@@ -19299,7 +19299,7 @@ Transform:
   m_GameObject: {fileID: 1025578040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.14, y: 7.11, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.39, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19622,7 +19622,7 @@ Animator:
   m_GameObject: {fileID: 1157752705}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b8e678c07592d0843ba35e31e8d1bcf6, type: 2}
+  m_Controller: {fileID: 9100000, guid: 65e1691acb089ce418276777ea1d84bf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -22489,7 +22489,7 @@ Animator:
   m_GameObject: {fileID: 1484623710}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65e1691acb089ce418276777ea1d84bf, type: 2}
+  m_Controller: {fileID: 9100000, guid: b8e678c07592d0843ba35e31e8d1bcf6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -26599,7 +26599,7 @@ MonoBehaviour:
   objectType: 2
   painel: {fileID: 877499644}
   textUI: {fileID: 319001163}
-  mensagem: Jabuti Gigante
+  mensagem: "Ol\xE1 meu povo! :)\r\nmostrar pra voces aqui\r\num jabuti\r\nVoces ja tinham visto um \r\njabuti dese tamanho?\r\nparece que tem 200 anos\r\noia\r\nele \xE9 grande\r\n\xF3 o jabuti ai \xF3\r\n\xE9 monstro de grande\r\ntem for\xE7a pra empurrar qualquer pessoa\r\npra todo lugar\r\nas pernas dele \xE9 forte\r\nai \xF3 :)"
   somInteracao: {fileID: 8300000, guid: c95f97e5d606e0d43904e9b3b1fbbde3, type: 3}
   volume: 1
 --- !u!50 &1988241866
@@ -27014,7 +27014,7 @@ MonoBehaviour:
   objectType: 3
   painel: {fileID: 877499644}
   textUI: {fileID: 319001163}
-  mensagem: "ol\xE1 senhor manoel tudo bem com voce?"
+  mensagem: ".......\r\n.......\r\n.......\r\n.......\r\n.......\r\n.......\r\n.......\r\n[\xE9 grande mesmo Manuel]\r\n\xE9 grande\r\n[vumo ver mais bicho em Manuel]\r\nvamos ver mais bicho\r\ndaqui a pouquinho"
   somInteracao: {fileID: 8300000, guid: 819a21fbb813e7245abba398ceb58bc7, type: 3}
   volume: 1
 --- !u!61 &2056798742

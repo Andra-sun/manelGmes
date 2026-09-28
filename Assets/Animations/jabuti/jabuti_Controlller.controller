@@ -262,8 +262,8 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: right
-    m_StateMachine: {fileID: -585104354294953821}
+    m_Name: left
+    m_StateMachine: {fileID: 5000585915714476219}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -274,8 +274,8 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: left
-    m_StateMachine: {fileID: 5000585915714476219}
+    m_Name: right
+    m_StateMachine: {fileID: -585104354294953821}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []

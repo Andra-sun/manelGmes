@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -15,7 +16,6 @@ public class Plate : Interactable
     [Range(0f, 1f)]
     [SerializeField] private float volume = 1f;
 
-    private const char PageBreak = '|';
     private const float DuracaoMinimaPagina = 0.3f;
 
     private AudioSource audioSource;
@@ -44,7 +44,7 @@ public class Plate : Interactable
             if (textUI.IsTyping)
                 textUI.Skip();
 
-            return; // páginas avançam sozinhas, E só acelera a digitação da página atual
+            return;
         }
 
         if (painel.activeSelf)
@@ -63,7 +63,11 @@ public class Plate : Interactable
             audioSource.Play();
         }
 
-        string[] paginas = mensagem.Split(PageBreak);
+        string[] paginas = mensagem
+            .Replace("\r\n", "\n")
+            .Split('\n')
+            .Where(l => l.Trim().Length > 0)
+            .ToArray();
 
         if (somInteracao != null && paginas.Length > 1)
             pagingRoutine = StartCoroutine(PlayPages(paginas, somInteracao.length));
